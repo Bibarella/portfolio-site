@@ -1,0 +1,169 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Roboto;
+  font-size: 14px;
+  color: #424242;
+}
+
+.container {
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em 1em 1em 1em;
+}
+
+header, footer, section, div {
+  box-sizing: border-box;
+}
+
+header{
+  border-bottom: 3px solid #7d97ad;
+  width: 100%;
+  display: flex;
+  padding-top: 20px;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+h4 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.intro {
+  text-align: right;
+  width: 100%;
+  padding-bottom: 2em;
+  text-transform: uppercase;
+  color: #2d3c49;
+}
+
+.picture {
+    padding: 2em 0em 2em 0em;
+    max-width: 100%;
+}
+
+h2 {
+  color: #7d97ad;
+  font-size: 30px;
+  margin: 0em 0em 0.5em 0.5em;
+  font-weight: lighter;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.cards img {
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.card1, .card2, .card3 {
+  border: 1px solid #d0d0d0;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 2px 2px 0 0;
+  margin-right: 20px;
+}
+
+.block {
+  text-align: center;
+  font-size: 18px;
+}
+
+.block a {
+  text-decoration-line: none;
+  color: #424242;
+}
+
+footer {
+  float: left;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7d97ad;
+  margin-top: 3em;
+  padding: 2em 0em 2em 0em;
+}
+
+footer img {
+  width: 50px;
+  height: 50px;
+  padding-right: 2em;
+}
+
+@media screen and (max-width: 550px) {
+  .intro {
+    width: 85%;
+  }
+
+  .logo {
+    width: 15%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+
+ .card1, .card2, .card3 {
+    margin-bottom: 20px;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 1000px) {
+  .card1, .card2, .card3 {
+    width: 30%;
+    margin-right: 10px;
+   }
+
+   .cards {
+     display: flex;
+     justify-content: center;
+   }
+ }
+
+  @media screen and (min-width: 1001px) {
+     .container {
+       width: 1001px;
+       margin-left:auto;
+       margin-right: auto;
+     }
+
+     .card1, .card2 {
+       margin-right: 40px;
+      }
+
+      .card3 {
+        margin-right: 0;
+      }
+   }
